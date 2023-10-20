@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class UDPServer {
     public static final int SERVER_PORT = 12345;
-    public static final int BUFFER_SIZE = 4096;
+    public static final int BUFFER_SIZE = 1024;
 
     private Map<String, Integer> clientPorts = new HashMap<>();
     private Map<String, InetAddress> clientaddr = new HashMap<>();
