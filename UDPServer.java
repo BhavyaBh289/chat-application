@@ -44,6 +44,7 @@ public class UDPServer {
                     if (parts.length >= 2) {
                         String username = parts[1];
                         clientPorts.remove(username);
+                        clientaddr.remove(username);
                         String leftMsg = username + " left the chat";
                         for (Map.Entry<String, Integer> entry : clientPorts.entrySet()) {
 
