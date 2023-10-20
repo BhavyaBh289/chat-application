@@ -39,7 +39,8 @@ public class UDPClient {
 
         chatTextArea = new JTextArea("Enter /quit to exit\n");
         chatTextArea.setEditable(false);
-
+        chatTextArea.setLineWrap(true);
+        chatTextArea.setWrapStyleWord(true);
         // Increase font size
         Font font = new Font("Arial", Font.PLAIN, 16);
         chatTextArea.setFont(font);
